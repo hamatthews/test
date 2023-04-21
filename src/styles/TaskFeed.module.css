@@ -1,0 +1,9 @@
+.taskFeed {
+  grid-area: tf;
+
+  padding: 20px 30px;
+}
+
+.taskFeedTitle {
+  font-size: 32px;
+}

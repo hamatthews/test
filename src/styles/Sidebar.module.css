@@ -1,0 +1,39 @@
+.sidebar {
+  grid-area: sb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--grey-1);
+}
+
+.newTaskBtn {
+  padding: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--blue-1);
+  background-color: var(--blue-2);
+  font-weight: bold;
+}
+
+.searchBoxWrapper {
+  display: flex;
+  background-color: var(--blue-2);
+  border-radius: 3px;
+}
+
+.searchBox {
+  width: 100%;
+  height: fit-content;
+  border: none;
+  line-height: 24px;
+  background-color: var(--blue-2);
+}
+
+.searchButton {
+  padding: 0 5px;
+  border: 1px solid var(--blue-1);
+  background-color: rgba(150, 150, 255, 0.5);
+}

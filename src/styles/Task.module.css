@@ -1,0 +1,89 @@
+.task {
+  display: grid;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 3px solid var(--grey-2);
+  height: 120px;
+  grid-template:
+    'st na de' minmax(0, 1fr)
+    'st du de' minmax(0, 1fr)
+    'ed la de' minmax(0, 1fr)
+    / minmax(0, 1fr) minmax(0, 2fr) minmax(0, 6fr);
+}
+
+.taskField {
+  padding: 5px;
+  min-width: 0;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskStatus {
+  grid-area: st;
+  position: relative;
+  height: 100%;
+}
+
+.taskStatusBubble {
+  position: absolute;
+  inset: 0 10% auto auto;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.taskEdit {
+  justify-self: end;
+  margin: 23px;
+  background: lightgrey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.taskName {
+  grid-area: na;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.taskDueDate {
+  grid-area: du;
+}
+
+.taskDescription {
+  grid-area: de;
+  align-self: start;
+  overflow-y: auto;
+
+  /* overflow: visible; */
+  white-space: normal;
+}
+
+.taskLabels {
+  grid-area: la;
+  align-self: start;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  max-width: 140px;
+  text-align: center;
+}
+
+.taskLabel {
+  padding: 2.5px 5px;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+.personal {
+  background-color: rgb(200, 255, 200);
+}
+.professional {
+  background-color: rgb(200, 200, 255);
+}
+.urgent {
+  background-color: rgb(255, 200, 200);
+}

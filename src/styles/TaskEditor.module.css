@@ -1,0 +1,63 @@
+.taskEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  padding: 30px;
+  width: 500px;
+  height: 600px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.editorInput {
+  padding: 0 5px;
+  width: fit-content;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.frequency {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+  width: 120px;
+  height: 100px;
+}
+
+.frequency > * {
+  display: flex;
+  justify-content: space-between;
+}
+
+.labels {
+  display: flex;
+  gap: 0 20px;
+  width: 300px;
+}
+
+.labels > * {
+  gap: 10px;
+}
+
+.btn {
+  padding: 0 10px;
+  width: fit-content;
+  border: 1px solid grey;
+}
+
+.discardBtn {
+  background-color: rgb(255, 200, 200);
+  color: red;
+}
+
+.exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 15px;
+  font-size: 24px;
+}

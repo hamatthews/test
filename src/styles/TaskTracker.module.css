@@ -1,0 +1,9 @@
+.taskTracker {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template:
+    'nb nb' 1fr
+    'sb tf' 11fr
+    / minmax(200px, 1fr) 4fr;
+}

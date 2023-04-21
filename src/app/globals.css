@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --blue-1: rgb(100, 100, 255);
+  --blue-2: rgb(200, 200, 255);
+  --grey-1: #fafafa;
+  --grey-2: #e0e0e0;
+}
+
+* {
+  margin: 0;
+}
